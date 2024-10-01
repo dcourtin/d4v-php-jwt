@@ -1,9 +1,8 @@
 # php-jwt for Laravel
 
 This package provides a convenient way to use the lib firebase/php-jwt https://packagist.org/packages/firebase/php-jwt in Laravel.
-- Call methods via facade
+- Call methods ``encode()`` and ``decode()`` via facade
 - Set up your configuration in a config file for convenience
-
 
 ## Installation
 ```SHELL
@@ -14,6 +13,8 @@ composer req d4v/php-jwt
 ```shell
 php artisan vendor:publish --tag=config
 ```
+
+The config file allows you to set issuer (from), secret (private key), algorythm (how to encrypt data) and ttl (time to live).
 ```php
 return [
     'issuer' => env('APP_URL', 'who-sent-the-token'),
