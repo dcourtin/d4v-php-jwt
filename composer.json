@@ -2,7 +2,6 @@
     "name": "d4v/php-jwt",
     "description": "D4v JWT is an implementation of firebase/php-jwt for Laravel",
     "type": "library",
-    "version" : "1.0.0",
     "require": {
         "firebase/php-jwt": "^6.10",
         "illuminate/support": "^11.25"

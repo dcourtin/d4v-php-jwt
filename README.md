@@ -6,8 +6,9 @@ This package provides a convenient way to use the lib firebase/php-jwt https://p
 
 
 ## Installation
-<span style="color:orange;">&#9888;</span> This package is in active development it is not available on packagist.
-~~composer req d4v/php-jwt~~
+```SHELL
+composer req d4v/php-jwt
+```
 
 ## Configuration
 ```shell
@@ -32,9 +33,7 @@ php artisan key:generate --show
 In its simpler form, the lib can helps you generate a JWT this fast :
 ```php
 use D4v\JWT\Facades\JWT;
-```
 
-```php
 $token = JWT::encode(['sub'=> 1]);
 ```
 But you can set your parameters entirely at the runtime if you want :
