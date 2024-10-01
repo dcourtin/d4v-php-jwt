@@ -30,13 +30,13 @@ php artisan key:generate --show
 
 ## How to use
 ### Simple way
-In its simpler form, the lib can helps you generate a JWT this fast :
+In its simplest form, the lib can help you generate a JWT this fast:
 ```php
 use D4v\JWT\Facades\JWT;
 
 $token = JWT::encode(['sub'=> 1]);
 ```
-But you can set your parameters entirely at the runtime if you want :
+You can also set your parameters entirely at runtime if needed:
 ```php
 payload = [
     'iss' => 'https://mydomain.tld',
@@ -47,9 +47,9 @@ payload = [
 
 JWT::encode($payload);
 ```
-Call the decode methode to restore the data :
+Call the ``decode()`` method to restore the data :
 ```php
-JWT::decode($token);
+$decoded = JWT::decode($token);
 ```
 More info about firebase/php-jwt can be found here :
 https://packagist.org/packages/firebase/php-jwt
