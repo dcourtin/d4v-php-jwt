@@ -1,0 +1,41 @@
+{
+    "name": "d4v/php-jwt",
+    "description": "D4v JWT is an implementation of firebase/php-jwt for Laravel",
+    "type": "library",
+    "version" : "1.0.0",
+    "require": {
+        "firebase/php-jwt": "^6.10",
+        "illuminate/support": "^11.25"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "D4v\\JWT\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Courtin",
+            "email": "courtin.david@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^3.2",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "D4v\\JWT\\D4vJWTServiceProvider"
+            ],
+            "aliases": {
+                "D4vJWT": "D4v\\JWT\\Facades\\JWT"
+            }
+        }
+    }
+}
