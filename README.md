@@ -1,5 +1,7 @@
 # php-jwt for Laravel
 
+``Version 2.0.0 is compatible with Illuminate Support 10 et 11``
+
 This package provides a convenient way to use the lib firebase/php-jwt https://packagist.org/packages/firebase/php-jwt in Laravel.
 - Call methods ``encode()`` and ``decode()`` via facade
 - Set up your configuration in a config file for convenience
