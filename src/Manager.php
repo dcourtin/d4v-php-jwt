@@ -14,7 +14,7 @@ class Manager
 
     public function __construct()
     {
-        $this->issuer = config('d4v-jwt.issuer', env('APP_URL'));
+        $this->issuer = config('d4v-jwt.issuer');
         $this->secret = config('d4v-jwt.secret');
         $this->algo = config('d4v-jwt.algo', 'HS256');
         $this->ttl = config('d4v-jwt.ttl', '600');
