@@ -8,7 +8,7 @@ This package provides a convenient way to use the lib firebase/php-jwt https://p
 
 ## Installation
 ```SHELL
-composer req d4v/php-jwt dev-main
+composer req d4v/php-jwt
 ```
 
 ## Configuration
